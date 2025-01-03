@@ -1,11 +1,13 @@
 import React from 'react';
 
-const TodoItem = ({ id, task }) => {
+const TodoItem = ({ id, task, onDelete }) => {
   return (
-    <li>
-      <input type="checkbox" id={id} />
-      <label htmlFor={id}>{task}</label>
-      <span className="trash-icon" role="button" aria-label={`Delete ${task}`}>🗑️</span>
+    <li className="todo-item">
+      <input type="checkbox" />
+      <span>{task}</span>
+      <button onClick={() => onDelete(id)} className="delete-button">
+        🗑️
+      </button>
     </li>
   );
 };

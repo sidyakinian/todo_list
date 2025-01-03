@@ -36,3 +36,34 @@
     transform: rotate(360deg);
   }
 }
+
+.todo-list {
+  background-color: #f5f5dc; /* Beige background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.todo-list h2 {
+  color: #8b4513; /* SaddleBrown color for the header */
+  margin-bottom: 20px;
+}
+
+.todo-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.todo-list li {
+  background-color: #deb887; /* BurlyWood color for each item */
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  color: #4b3621; /* Dark brown text */
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.todo-list li:hover {
+  background-color: #d2b48c; /* Tan color on hover */
+}
