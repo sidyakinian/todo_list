@@ -1,11 +1,10 @@
 import React from 'react';
 
-const TodoItem = ({ id, task, onDelete }) => {
+const TodoItem = ({ id, task, onRemove }) => {
   return (
-    <li className="todo-item">
-      <input type="checkbox" />
-      <span>{task}</span>
-      <button onClick={() => onDelete(id)} className="delete-button">
+    <li>
+      {task}
+      <button onClick={() => onRemove(id)} style={{ marginLeft: '10px' }}>
         🗑️
       </button>
     </li>
