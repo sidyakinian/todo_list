@@ -20,6 +20,10 @@ function App() {
     localStorage.setItem('todos', JSON.stringify(todos));
   }, [todos]);
 
+  useEffect(() => {
+    console.log('first load');
+  }, []);
+
   const addTodo = () => {
     if (newTodo.trim() /* trim whitespace */) {
       setTodos([...todos, { id: `task${todos.length + 1}`, task: newTodo }]);
