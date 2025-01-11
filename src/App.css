@@ -38,12 +38,12 @@
 }
 
 .todo-list {
-  background-color: #393939; /* Beige background */
+  background-color: #393939;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 300px; /* Limit the width to 300px */
-  margin: 0 auto; /* Center the list horizontally */
+  max-width: 300px;
+  margin: 0 auto;
 }
 
 .todo-list h2 {
@@ -60,11 +60,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #595959; /* BurlyWood color for each item */
+  background-color: #595959;
   margin-bottom: 10px;
   padding: 10px;
   border-radius: 4px;
-  color: #ffffff; /* Dark brown text */
+  color: #ffffff;
   font-size: 18px;
   transition: background-color 0.3s ease;
 }
@@ -77,23 +77,23 @@
 
 .todo-input input {
   padding: 10px;
-  border: 2px solid #C5C7F0; /* SaddleBrown border */
+  border: 2px solid #C5C7F0;
   border-radius: 4px;
   font-size: 16px;
   margin-right: 10px;
   width: 200px;
-  background-color: #eaebf8; /* Light gray background */
+  background-color: #eaebf8;
   color: #5A2084;
 }
 
 .todo-input button {
   padding: 10px 20px;
-  background-color: #C5C7F0; /* SaddleBrown background */
+  background-color: #C5C7F0; 
   color: #5A2084;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  font-weight: bold; /* Make the font heavier */
-  font-size: 18px; /* Increase font size */
+  font-weight: bold;
+  font-size: 18px;
 }
