@@ -1,14 +1,18 @@
 import React from 'react';
-import TodoItem from './components/TodoItem';
+import TodoList from './components/TodoList';
 
 const App = () => {
+  
+  let todos = [
+    "Learn React",
+    "Get a job",
+    "Enjoy life"
+  ]
+
   return (
     <div>
-      <ul>
-        <TodoItem />
-        <TodoItem />
-        <TodoItem />
-      </ul>
+      <h2 style={{ color: 'white' }}>Todo list</h2>
+      <TodoList todos={todos} />
     </div>
   );
 }
