@@ -1,21 +1,13 @@
 import React from 'react';
+import TodoItem from './components/TodoItem';
 
 const App = () => {
   return (
     <div>
       <ul>
-        <li style={{ color: 'white' }}>
-          Learn React
-          <img 
-            src="./trash.svg" 
-            alt="Trash" 
-            style={{ 
-              marginLeft: '10px', 
-              width: '16px', 
-              height: '16px', 
-              cursor: 'pointer' 
-            }} 
-        /></li>
+        <TodoItem />
+        <TodoItem />
+        <TodoItem />
       </ul>
     </div>
   );
