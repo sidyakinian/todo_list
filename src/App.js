@@ -1,5 +1,6 @@
 import React from 'react';
 import { v4 as uuidv4 } from 'uuid';
+import './App.css'
 
 import TodoList from './components/TodoList';
 import TodoInput from './components/TodoInput';
@@ -13,7 +14,7 @@ const App = () => {
   ]
 
   return (
-    <div>
+    <div className='todo-list'>
       <h2 style={{ color: 'white' }}>Todo list</h2>
       <TodoInput />
       <TodoList todos={todos} />

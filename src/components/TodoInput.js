@@ -1,6 +1,6 @@
 const TodoInput = () => {
   return (
-    <div>
+    <div className='todo-input'>
       <input
         type="text"
         value="new task"
