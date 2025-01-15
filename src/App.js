@@ -1,5 +1,5 @@
 import React from 'react';
-import TodoList from './components/TodoList';
+import TodoItem from './components/TodoItem';
 
 const App = () => {
   
@@ -12,7 +12,11 @@ const App = () => {
   return (
     <div>
       <h2 style={{ color: 'white' }}>Todo list</h2>
-      <TodoList todos={todos} />
+      <ul>
+        <TodoItem todo={todos[0]} />
+        <TodoItem todo={todos[1]} />
+        <TodoItem todo={todos[2]} />
+      </ul>
     </div>
   );
 }
