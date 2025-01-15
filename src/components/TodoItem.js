@@ -1,7 +1,7 @@
-const TodoItem = ({ todo }) => {
+const TodoItem = ({ name }) => {
   return (
     <li style={{ color: 'white' }}>
-      {todo}
+      {name}
       <img 
         src="./trash.svg" 
         alt="Trash" 

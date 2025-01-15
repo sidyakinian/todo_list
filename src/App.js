@@ -1,12 +1,14 @@
 import React from 'react';
+import { v4 as uuidv4 } from 'uuid';
+
 import TodoList from './components/TodoList';
 
 const App = () => {
   
   let todos = [
-    "Learn React",
-    "Get a job",
-    "Enjoy life"
+    { id: uuidv4(), name: "Learn React" },
+    { id: uuidv4(), name: "Get a job" },
+    { id: uuidv4(), name: "Enjoy life" },
   ]
 
   return (
