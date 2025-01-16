@@ -1,10 +1,10 @@
 import TodoItem from "./TodoItem";
 
-const TodoList = ({ todos }) => {
+const TodoList = ({ todos, removeTodo }) => {
   return (
     <ul>
       {todos.map(todo => (
-        <TodoItem key={todo.id} name={todo.name} />
+        <TodoItem key={todo.id} id={todo.id} name={todo.name} removeTodo={removeTodo} />
       ))}
     </ul>
   )

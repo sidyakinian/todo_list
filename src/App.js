@@ -15,14 +15,19 @@ const App = () => {
   const [newTodo, setNewTodo] = useState("");
 
   const addTodo = () => {
-    setTodos([...todos, { id: uuidv4(), name: newTodo }])
+    setTodos([...todos, { id: uuidv4(), name: newTodo }]);
+    setNewTodo("");
+  }
+
+  const removeTodo = (id) => {
+    setTodos(todos.filter(todo => todo.id !== id));
   }
 
   return (
     <div className='todo-list'>
       <h2 style={{ color: 'white' }}>Todo list</h2>
       <TodoInput newTodo={newTodo} setNewTodo={setNewTodo} addTodo={addTodo} />
-      <TodoList todos={todos} />
+      <TodoList todos={todos} removeTodo={removeTodo} />
     </div>
   );
 }
