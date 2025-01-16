@@ -1,4 +1,4 @@
-const TodoInput = ({ newTodo, setNewTodo }) => {
+const TodoInput = ({ newTodo, setNewTodo, addTodo }) => {
   return (
     <div className='todo-input'>
       <input
@@ -7,7 +7,7 @@ const TodoInput = ({ newTodo, setNewTodo }) => {
         onChange={(e) => setNewTodo(e.target.value)}
         placeholder="enter new task"
       />
-      <button onClick={() => {}}>Add</button>
+      <button onClick={addTodo}>Add</button>
     </div>
   )
 }

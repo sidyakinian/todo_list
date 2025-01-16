@@ -7,18 +7,21 @@ import TodoInput from './components/TodoInput';
 
 const App = () => {
 
-  const [newTodo, setNewTodo] = useState("");
-
-  let todos = [
+  const [todos, setTodos] = useState([
     { id: uuidv4(), name: "Learn React" },
     { id: uuidv4(), name: "Get a job" },
     { id: uuidv4(), name: "Enjoy life" },
-  ]
+  ]);
+  const [newTodo, setNewTodo] = useState("");
+
+  const addTodo = () => {
+    setTodos([...todos, { id: uuidv4(), name: newTodo }])
+  }
 
   return (
     <div className='todo-list'>
       <h2 style={{ color: 'white' }}>Todo list</h2>
-      <TodoInput newTodo={newTodo} setNewTodo={setNewTodo} />
+      <TodoInput newTodo={newTodo} setNewTodo={setNewTodo} addTodo={addTodo} />
       <TodoList todos={todos} />
     </div>
   );
