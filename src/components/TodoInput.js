@@ -1,10 +1,10 @@
-const TodoInput = () => {
+const TodoInput = ({ newTodo, setNewTodo }) => {
   return (
     <div className='todo-input'>
       <input
         type="text"
-        value="new task"
-        onChange={() => console.log('changed')}
+        value={newTodo}
+        onChange={(e) => setNewTodo(e.target.value)}
         placeholder="enter new task"
       />
       <button onClick={() => {}}>Add</button>
