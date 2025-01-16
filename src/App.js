@@ -7,7 +7,7 @@ import TodoInput from './components/TodoInput';
 
 const App = () => {
 
-  const [newTodo, setNewTodo] = useState("todo");
+  const [newTodo, setNewTodo] = useState("");
 
   let todos = [
     { id: uuidv4(), name: "Learn React" },
